@@ -4,6 +4,8 @@
     <string name="password">Password</string>
     <string name="login">Login</string>
     <string name="logged_in">Logged in</string>
-    <string name="user_error">User must ve a valid email</string>
+    <string name="user_error">User must be a valid email</string>
     <string name="pass_error">Password must be at least 5 characters length</string>
+    <string name="pass_error2">Password must contains some of this characters !, #, $, %, =, ., /</string>
+    <string name="pass_error3">Password must be ar least one number</string>
 </resources>
