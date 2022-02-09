@@ -41,7 +41,7 @@ class MainViewModel (
             val result = tryLoginRepositoryUseCase(user, pass)
             _state.value = UiState(
                 userError = if (result.userError) R.string.user_error else null,
-                passError = if (result.passError) R.string.pass_error else null,
+                passError = if (result.passError)  R.string.pass_error else null,
                 loggedIn = result.success
 
             )

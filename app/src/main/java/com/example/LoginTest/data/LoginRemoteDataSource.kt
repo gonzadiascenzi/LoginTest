@@ -16,30 +16,30 @@ class LoginRemoteDataSourceImplementation: LoginRemoteDataSource {
     {
         delay(2000)
         LoginResult(
-            userError = (!username.contains('@') && !username.contains(".com")),
-            passError = (password.length < 6
+            userError = !(username.contains(".com") && username.contains('@')),
+            passError = !((password.length > 6)
                     && (
-                            !password.contains('1') ||
-                            !password.contains('2') ||
-                            !password.contains('3') ||
-                            !password.contains('4') ||
-                            !password.contains('5') ||
-                            !password.contains('6') ||
-                            !password.contains('7') ||
-                            !password.contains('8') ||
-                            !password.contains('9')
+                            password.contains('1') ||
+                            password.contains('2') ||
+                            password.contains('3') ||
+                            password.contains('4') ||
+                            password.contains('5') ||
+                            password.contains('6') ||
+                            password.contains('7') ||
+                            password.contains('8') ||
+                            password.contains('9')
                     )
                     && (
-                            !password.contains('!') ||
-                            !password.contains('#') ||
-                            !password.contains('$') ||
-                            !password.contains('%') ||
-                            !password.contains('/') ||
-                            !password.contains('=') ||
-                            !password.contains('.')
-                    ))
+                            password.contains('!') ||
+                            password.contains('#') ||
+                            password.contains('$') ||
+                            password.contains('%') ||
+                            password.contains('/') ||
+                            password.contains('=') ||
+                            password.contains('.')
+                    )))
 
-        )
+
     }
 
 }
